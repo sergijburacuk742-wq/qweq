@@ -1,0 +1,65 @@
+   body {
+        background-color: #ffffff;
+      }
+      body h1 {
+        text-align: center;
+        text-size-adjust: initial;
+        text-box: unset;
+      }
+        
+   .my-image {
+  width: 220px;
+  height: auto; /* Це змусить браузер зберегти пропорції */
+  
+}
+
+.products-container {
+      display: flex;           /* 1. Вмикає режим Flexbox (ставить елементи в ряд) */
+      justify-content: center; /* 2. Центрує весь вміст (картки) по горизонталі */
+      gap: 20px;               /* 3. Додає 20px відступу МІЖ картками */
+      flex-wrap: wrap;         /* (Бонус) Дозволяє карткам переноситись на новий 
+                                    рядок, якщо екран стане занадто вузьким */
+    }
+
+    /*
+      СТИЛЬ КАРТКИ (я видалив margin: auto)
+    */
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      width: 300px;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 20px; /* Залишаємо відступ зверху */
+    }
+    
+    .product-card img {
+      width: 100%; 
+      height: auto; 
+      border-radius: 4px;
+    }
+    
+    .product-card h2 {
+      font-size: 24px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .product-card .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #b12704;
+      margin-bottom: 15px;
+    }
+    
+    .product-card p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    
+    .product-card ul {
+      padding-left: 20px;
+    }
+
+    
